@@ -1,0 +1,163 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #333;
+  font-family: 'Poppins', sans-serif;
+  background: url("../img/bg-pattrens/bg4.png");
+  overflow-x: hidden;
+}
+
+body.hide {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1100px;
+  position: relative;
+  margin: auto;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-js {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.effect {
+  position: absolute;
+  top: 20%;
+  right: 8%;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #e6e601;
+  -webkit-animation: spin 5s linear infinite;
+          animation: spin 5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: black;
+  line-height: 1.5;
+}
+
+.img-box {
+  position: relative;
+}
+
+.img-box img {
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 30px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border: 2px solid yellow;
+  font-weight: 600;
+  color: black;
+}
+
+.btn:hover {
+  background: yellow;
+  border: 2px solid transparent;
+}
+
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 4em auto;
+}
+
+.heading h3 {
+  font-size: 2em;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.heading span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  height: 5px;
+  background: yellow;
+}
+/*# sourceMappingURL=utility.css.map */
